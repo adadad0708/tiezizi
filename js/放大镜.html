@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{padding: 0;
+    margin: 0}
+    #boxsmall{
+        width: 350px;
+        height: 350px;
+        border:1px solid blue;
+        position: relative;
+        float: left;
+        margin:100px 100px;
+    }
+    #coverage{
+        height: 100%;
+        width: 100%;
+        background: orange;
+        position: absolute;
+        opacity: 0.2;
+    }
+    #silding{
+        width: 175px;
+        height: 175px;
+        position: absolute;
+        overflow: hidden;
+        display: none;
+    }
+    #boxbig{
+        float: left;
+        border: 1px solid orangered;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        display: none;
+        position: relative;
+    }
+    #photo2{
+        position: absolute;
+    }
+    #photo1{
+        position: absolute;
+    }
+    #photo3{
+        position: absolute;
+    }
+
+</style>
+<body>
+    <div id="boxsmall">
+        <img id="photo1" src="img/001.jpg" alt="">
+        <div id="coverage"></div>
+        <div id="silding">
+            <img id="photo2" src="img/001.jpg" alt="">
+        </div>
+    </div>
+    <div id="boxbig">
+        <img id="photo3" src="img/0001.jpg" alt="">
+    </div>
+<script>
+    var boxSmall = document.getElementById('boxsmall');
+    var coverage = document.getElementById('coverage');
+    var boxBig = document.getElementById('boxbig');
+    var silding = document.getElementById('silding')
+    var photo2 = document.getElementById('photo2');
+    var photo3 = document.getElementById('photo3');
+    boxSmall.onmousemove = function(e){
+        var e = e || window.event;
+        var x = e.clientX;
+        var y = e.clientY;
+        silding.style.display = 'block';
+        boxBig.style.display = 'block';
+        var sildingY = y - boxSmall.offsetTop - silding.offsetHeight/2;//滑块中心
+        var sildingX = x - boxSmall.offsetLeft - silding.offsetWidth/2;//滑块中心     
+          if(sildingY<=0){
+             sildingY = 0;
+          }
+          if(sildingY >= boxSmall.offsetHeight - silding.offsetHeight){
+            sildingY = boxSmall.offsetHeight - silding.offsetHeight;
+          }
+          silding.style.top = sildingY + 'px';
+          if(sildingX<=0){
+             sildingX = 0;
+          }
+          if(sildingX >= boxSmall.offsetWidth - silding.offsetWidth){
+            sildingX = boxSmall.offsetWidth - silding.offsetWidth;
+          }
+          silding.style.left = sildingX + 'px';   
+           photo2.style.top = -sildingY + 'px';//小盒子的图片跟随滑块移动；取负值；
+           photo2.style.left = -sildingX + 'px';
+
+//确定大盒子的图片的定位距离，滑块距离其父元素的距离比上父级元素的尺寸 == 大图片需要移动的值比上整个大图片;位移值取负；
+            var boxBigX = (sildingX/boxSmall.offsetWidth)*photo3.offsetWidth;
+            var boxBigY = (sildingY/boxSmall.offsetHeight)*photo3.offsetHeight;
+            // console.log(boxBigX);
+            photo3.style.top = -boxBigY + 'px';
+            photo3.style.left = -boxBigX + 'px';
+    }
+    boxSmall.onmouseout = function(e){
+        silding.style.display = 'none';
+        boxBig.style.display = 'none';
+    }
+</script>
+</body>
+</html>

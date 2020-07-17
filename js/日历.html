@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日历</title>
+    <style>
+    .box{
+            width: 150px;
+            height: 180px;
+            background-color: #369;
+            margin: 100px auto;
+            text-align: center;
+        }
+        .box p {text-align: center;
+            line-height: 60px;
+            font-size:12px;
+            color: #fff;
+        }
+        .box span{
+            display: block;
+            width: 75px;
+            height: 75px;
+            margin: 0 auto;
+            font-size:20px;
+            color: #000;
+            background-color: yellowgreen;
+            line-height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <p id="p1"></p>
+        <span id="s1"></span>
+    </div>
+    <script src="../day8/public.js"></script>
+    <script>
+        //需求：在日历上显示当前的星期和时间
+        function getNowTime(){
+            var date=new Date();
+            //获取小时
+            var hour=date.getHours()
+            hour=hour<10?"0"+hour:hour;
+            //获取分钟
+            var minute=date.getMinutes();
+            minute=minute<10?"0"+minute:minute;
+            //获取秒
+            var second=date.getSeconds();
+            second=second<10?"0"+second:second;
+
+            return hour+":"+minute+":"+second;
+            
+        }
+        function getNowWeek(){
+            var date =new Date();
+            var arr=["周日","周一","周二","周三","周四","周五","周六"];
+            //获取星期
+            var week=date.getDay();
+            return arr[week];
+        }
+
+        function show(){
+            //把当前时间显示在页面中
+            var timep=$id('p1');
+            timep.innerHTML=getNowTime();
+
+            var weekp=$id('s1');
+            weekp.innerHTML=getNowWeek();
+        }
+        show()
+        var clock=setInterval(show,1000);
+        </script>
+</body>
+</html>

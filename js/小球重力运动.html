@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            width: 40px;
+            height: 40px;
+            background: skyblue;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="你要飞" id="btn">
+    <div id='ball'></div>
+    <script>
+        var btn = document.getElementById("btn");
+        var ball = document.getElementById("ball");
+
+        //每次要走的值
+        var speedX = 5;
+        var speedY = -20;
+        
+        btn.onclick=function(){
+            clearInterval(ball.timer)
+            ball.timer = setInterval(function(){
+                var currentX = ball.offsetLeft;
+                var currentY = ball.offsetTop;
+                currentX +=speedX;
+                currentY +=speedY;
+                if(currentY>window.innerHeight-ball.offsetHeight){
+                    currentY = window.innerHeight-ball.offsetHeight;
+                    speedY = speedY * -0.8;
+                    speedX--;
+                    if(speedX<=0){
+                        clearInterval(ball.timer);
+                    }
+                     
+                }
+
+                ball.style.left=currentX+"px";
+                ball.style.top=currentY+"px";
+                speedY++;
+                
+            },20)
+            
+        }
+    </script>
+</body>
+
+</html>

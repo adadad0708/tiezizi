@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>打字游戏</title>
+		<!--引入animate.css动画库-->
+		<!-- <link rel="stylesheet" href="animate.css" /> -->
+		<style>
+			body {
+				margin: 0;
+				/*开启弹性布局，并让弹性布局中的子元素
+                水平居中对齐，垂直居中对齐*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				/*文字居中*/
+				text-align: center;
+				/*设置背景颜色的经像渐变*/
+				background: radial-gradient(circle, #444, #111, #000);
+			}
+			#char {
+				font-size: 400px;
+				color: lightgreen;
+				/*设置文字阴影*/
+				/*text-shadow: 水平位置 垂直位置 模糊距离 阴影颜色*/
+				/*位置可以为负值*/
+				text-shadow: 0 0 50px #666;
+			}
+			#result {
+				font-size: 20px;
+				color: #888;
+			}
+			/*找到id为char及类名为error的div元素*/
+			#char.error {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<mian>
+			<div id="char">A</div>
+			<div id="result">请在按键上按下屏幕上显示的字母</div>
+		</mian>
+		<script>
+			// 兼容 ie5
+			var Game = /** @class */ (function() {
+				function Game() {
+					this.charBox = document.getElementById('char')
+					this.resBox = document.getElementById('result')
+					this.state = {
+						trueTimes: 0,
+						errorTimes: 0,
+						curChar: 'A'
+					}
+					this.changeChar()
+				}
+				// 更新字符
+				Game.prototype.changeChar = function() {
+					this.state.curChar = String.fromCharCode(
+						Math.round(Math.random() * 25) + 65
+					)
+					this.charBox.innerHTML = this.state.curChar
+				}
+				// 计算正确率
+				Game.prototype.calTrueRate = function() {
+					return Math.floor(
+						100 *
+							(this.state.trueTimes /
+								(this.state.trueTimes + this.state.errorTimes))
+					)
+				}
+				// 游戏开始
+				Game.prototype.play = function() {
+					var _this = this
+					document.onkeydown = function(e) {
+						var event = e || window.event
+						var keyCode = event.keyCode || event.which
+						if (_this.state.curChar === String.fromCharCode(keyCode)) {
+							_this.state.trueTimes++
+							_this.charBox.className = 'animated zoomIn'
+							_this.changeChar()
+						} else {
+							_this.state.errorTimes++
+							_this.charBox.className = 'animated shake error'
+						}
+						_this.resBox.innerHTML =
+							'正确' +
+							_this.state.trueTimes +
+							'个,错误' +
+							_this.state.errorTimes +
+							'个,正确率:' +
+							_this.calTrueRate() +
+							'%'
+						setTimeout(function() {
+							return (_this.charBox.className = '')
+						}, 500)
+					}
+				}
+				return Game
+			})()
+			var game = new Game()
+			game.play()
+		</script>
+	</body>
+</html>
