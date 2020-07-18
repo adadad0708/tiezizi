@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        *{margin:}
+      .box1 {
+        width: 400px;
+        height: 400px;
+        background: pink;
+        /* margin-bottom: 100px; */
+        /* border:1px solid blue; */
+
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background: red;
+        /* margin-bottom: 200px; */
+        padding-top:100px;
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>
+/* bug: 1.两个盒子(上下排列).之间有margin,取最大值 方法:a.只给一个方向上位置取值
+2.会错误的解析margin值到父级上 a. */

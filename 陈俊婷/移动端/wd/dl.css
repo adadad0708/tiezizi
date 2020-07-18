@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height:100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height:8.54rem;
+    width:90%;
+    justify-content: space-between;
+    margin:0 auto;
+}
+header article{
+    width:53%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header article img{
+    height:63%;
+}
+header article ul {
+    list-style: none;
+    width:33%;
+    height:8.54rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header article ul li:nth-of-type(1){
+    list-style: none;
+    font-size: 1.25rem;
+    
+    
+}
+header article ul li:nth-of-type(2){
+    list-style: none;
+    font-size: 0.78rem;
+    background:#e5645f;
+    border:1px solid #e5645f;
+    padding:1%;
+    border-radius: 6px;
+    text-align: center;
+}
+header span{
+    width:4%;
+    height:1rem;
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    transform: rotate(45deg);
+    position: absolute;
+    top:3.75rem;
+    left:89%;
+
+}
+nav{
+    height:4.58rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav h5 p{
+    font-size: 1rem;
+    text-align: center;
+
+}
+nav h5 li{
+    list-style: none;
+    font-size: 0.78rem;
+    text-align: center;
+}
+div{
+    height:6.58rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:0.6rem solid #fafafa;
+
+}
+div h6 li{
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+main{
+    height:28.67rem;
+}
+main figure{
+    width:94%;
+    margin-left:6%;
+    height:3.91rem;
+     position: reelative;
+     border-bottom:1px solid #e8e8e8;
+}
+main figure h4{
+    font-size:1rem;
+    line-height: 3.91rem;
+}
+main figure h4 span{
+    font-size:0.8rem;
+    margin-left:40.5%;
+}
+main figure aside{
+    height:1rem;
+    width:4%;
+    border-top:2px solid grey;
+    border-right:2px solid grey;
+    transform: rotate(45deg);
+    position: absolute;
+    top:57%;
+    left:90%;
+}
+footer{
+    height:3.75rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+footer aside{
+    display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+footer aside a{
+    text-decoration: none;
+    font-size:0.83rem;
+}
+footer aside i:last-of-type{
+    color:#c34943;
+}
+@media all and (max-width: 320px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  @media all and (min-width: 321px) and (max-width: 360px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  @media all and (min-width: 361px) and (max-width: 414px) {
+    html {
+      font-size: 16px;
+    }
+  }

@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  /* width: 100%; */
+  height: 100%;
+}
+#web-lf {
+  width: 189px;
+  height: 422px;
+  background: red;
+  float: left;
+}
+.w-box1 {
+  width: 189px;
+  height: 50px;
+  background: red;
+}
+.w-box2 {
+  width: 189px;
+  height: 144px;
+  background: yellow;
+}
+.box2-oa {
+  width: 189px;
+  height: 37px;
+  background: wheat;
+}
+.box2-oa img {
+  margin: 8px 8px 0 8px;
+  float: left;
+}
+
+.w-box2 select {
+  width: 124px;
+  height: 36px;
+  float: left;
+}
+.w-box2 h4 {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid blue;
+  margin-left: 100px;
+  float: right;
+  margin-top: -31px;
+}
+.oa1 {
+  width: 189px;
+  height: 34px;
+  font-size: 12px;
+}
+.oa2 {
+  width: 189px;
+  height: 34px;
+  font-size: 12px;
+}
+.oa3 {
+  width: 189px;
+  height: 34px;
+  font-size: 12px;
+}
+
+.w-box3 {
+  width: 188px;
+  height: 188px;
+  background: #f9f9f9;
+}
+.w-box3 table {
+  width: 187px;
+  height: 186px;
+  border: 1px solid yellow;
+}
+
+.oa4 {
+  width: 188px;
+  height: 39px;
+  border-bottom: 1px solid grey;
+}
+.oa4 img {
+  float: left;
+  margin: 8px 6px 0 6px;
+}
+.oa4 option {
+  float: left;
+}
+.oa4 section {
+  width: 120px;
+  height: 40px;
+  margin-top: 8px;
+}
+
+.w-box4 {
+  width: 188px;
+  height: 28px;
+  background: purple;
+}
+#web-rt {
+  height: 100%;
+  background: pink;
+  overflow: auto;
+}
+.head {
+  width: 100%;
+  height: 50px;
+  background: yellow;
+}
+.head-lf {
+  height: 50px;
+  width: 522px;
+  background: pink;
+  float: left;
+}
+li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+.head-lf .li1 {
+  width: 154px;
+  height: 49px;
+  border-bottom: 1px solid royalblue;
+  line-height: 49px;
+  text-align: center;
+}
+.head-lf .li2 {
+  width: 122px;
+  height: 50px;
+  text-align: center;
+  line-height: 49px;
+  background: blue;
+}
+
+.head-rt {
+  width: 201px;
+  height: 50px;
+  float: right;
+}
+.head-rt select {
+  width: 116px;
+  height: 26px;
+  line-height: 49px;
+  margin-top: 16px;
+  background-color: royalblue;
+}
+.head-rt option {
+  background: #428bca;
+  font-size: 12px;
+}
+.head-rt h6 {
+  float: right;
+  font-size: 14px;
+  line-height: 49px;
+}
+.transition {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  border-bottom: 1px solid grey;
+}
+.transition input {
+  float: right;
+  margin-top: 8px;
+}
+.menu {
+  height: 36px;
+  border-bottom: 1px solid grey;
+}
+.menu h5 {
+  width: 92px;
+  font-size: 12px;
+  color: blue;
+  border-top: 1px solid blue;
+  border-right: 1px solid blue;
+  border-left: 1px solid blue;
+  border-bottom: none;
+  padding: 8px;
+}
+fieldset {
+  margin: auto 6px;
+  padding-top: 6px;
+}
+.main {
+  height: px;
+}
+.main-lf {
+  float: left;
+  margin-left: 20px;
+  width: 560;
+  height: 483px;
+  border: 1px solid grey;
+  padding: 0 20px;
+}
+
+.main-lf-box1 {
+  width: 540px;
+  height: 66px;
+}
+.main-lf-box1 h2 {
+  font-size: 16px;
+  line-height: 66px;
+  padding-left: 12px;
+  border-bottom: 1px solid grey;
+}
+.main-lf table {
+  width: 520px;
+  height: 395px;
+  border: 1px solid red;
+  border-spacing: 0;
+}
+.main-lf td {
+  border: 1px solid red;
+}
+.main-rt {
+  float: right;
+  margin-left: 20px;
+  width: 560px;
+  height: 483px;
+  border: 1px solid grey;
+  padding: 0 20px;
+}
+
+.main-rt-box1 {
+  width: 540px;
+  height: 66px;
+}
+.main-rt-box1 h2 {
+  font-size: 16px;
+  line-height: 66px;
+  padding-left: 12px;
+  border-bottom: 1px solid grey;
+}
+.main-rt table {
+  width: 520px;
+  height: 395px;
+  border: 1px solid red;
+  border-spacing: 0;
+}
+.main-rt td {
+  border: 1px solid red;
+}

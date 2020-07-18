@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			margin-bottom: 20px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="box" id="box">盒子</div>
+    <input type="button" id="btn" value="点击我盒子边长">
+    <script type="text/javascript">
+		// box宽度不超过400时，点击btn盒子边长
+
+		// 将盒子宽度提取成信号量,数据类型是Number便于数学计算
+		var nowWidth = 200;
+		// 获取元素
+		var oBtn = document.getElementById("btn");
+		var oBox = document.getElementById("box");
+		// 事件绑定
+        oBtn.onclick = function() {
+            nowWidth += 20;
+			if(nowWidth >= 400) {
+                nowWidth = 400;
+            }
+            console.log(nowWidth);
+            oBox.style.width = nowWidth + "px";
+        };
+    </script>
+</body>
+</html>

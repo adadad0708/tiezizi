@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  width: 100%;
+  height: 700px;
+  background: red url(qfbanner_02.jpg) no-repeat;
+  padding-right: 40px;
+  display: inline-block;
+}

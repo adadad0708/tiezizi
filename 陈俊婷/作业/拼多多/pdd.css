@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 2.58rem;
+  display: flex;
+  margin: auto;
+  background: #e02e24;
+}
+header span {
+  font-size: 1.1rem;
+  /* line-height: 2.58rem; */
+  /* text-align: center; */
+  background: #e02e24;
+}
+nav {
+  height: 3.33rem;
+  overflow: auto;
+}
+/* nav ul {
+  width: 150%;
+  height: 3.33rem;
+}
+nav ul li {
+  list-style: none;
+  float: left;
+  font-size: 1rem;
+  line-height: 3.33rem;
+  width: 7.6%;
+  height: 3.33rem;
+  text-align: center;
+} */
+
+nav ul {
+  height: 3.33rem;
+  display: flex;
+  /* justify-content: space-around;
+  align-items: center; */
+  overflow: auto;
+}
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 3.33rem;
+  /* width: 2.58rem; */
+  height: 3.33rem;
+  flex-shrink: 0;
+  flex-basis: 2rem;
+  margin-left: 1.6rem;
+}
+nav ul li:nth-child(1) {
+  color: #e02e24;
+  box-sizing: border-box;
+  border-bottom: 0.2rem solid red;
+}
+div {
+  height: 11.75rem;
+  width: 100%;
+}
+div img {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  height: 12.33rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h1 figure {
+  height: 4rem;
+  width: 12.8%;
+  margin-left: 5.2%;
+  margin-top: 1.3rem;
+}
+h1 figure img {
+  height: 62.5%;
+}
+h1 figure p {
+  font-size: 0.72rem;
+}
+main {
+  flex: 1;
+  margin-top: 0.4rem;
+  overflow: auto;
+}
+main figure {
+  height: 18.25rem;
+  width: 100%;
+}
+main figure img {
+  height: 13.5rem;
+  width: 75.8%;
+  margin-left: 9.6%;
+}
+main figure li {
+  list-style: none;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2.6rem;
+}
+footer {
+  height: 4.08rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer li {
+  float: left;
+  height: 2.92rem;
+  width: 5.5%;
+  list-style: none;
+}
+footer img {
+  /* height: 2.75rem; */
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.6rem;
+}
+@media all and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media all and (min-width: 321px) and (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 414px) {
+  html {
+    font-size: 16px;
+  }
+}

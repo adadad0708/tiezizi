@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main,
+nav,
+header {
+  width: 100%;
+}
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  background: #3e97f1;
+  align-items: center;
+}
+aside {
+  width: 19%;
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+aside img {
+  width: 40%;
+  height: 100%;
+}
+aside i {
+  line-height: 1.8rem;
+}
+span img {
+  width: 98%;
+  align-self: center;
+  margin-left: -13%;
+}
+
+nav {
+  height: 3.15rem;
+  display: flex;
+  justify-content: space-around;
+  background: #3e97f1;
+}
+nav ul {
+  width: 88%;
+  background: #3e97f1;
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  list-style: none;
+  line-height: 3.15rem;
+}
+nav:nth-child(1) {
+  border-bottom: 3px solid white;
+}
+nav li:nth-child(1) {
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
+}
+nav img {
+  height: 20%;
+  width: 5%;
+  align-self: center;
+}
+main {
+  width: 90%;
+  flex: 1;
+  margin: 5% auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+main figure {
+  height: 5.25rem;
+  border-bottom: 1px solid #f8f8f8;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+figure h5 {
+  font-size: 14px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+figure h6 {
+  font-size: 0.6rem;
+  color: #b8b8b8;
+  display: flex;
+}
+figure h6 a {
+  font-size: 0.6rem;
+  color: red;
+  font-weight: bold;
+  border: 2px solid red;
+}
+@media all and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media all and (min-width: 321px) and (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 414px) {
+  html {
+    font-size: 16px;
+  }
+}

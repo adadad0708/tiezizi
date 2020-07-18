@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#head {
+  width: 100%;
+  height: 1.8%;
+  background: red;
+}
+.head-con {
+  width: 96%;
+  height: 100%;
+  background: pink;
+  margin: 0 auto;
+}
+.head-lf {
+  width: 19%;
+  height: 100%;
+  font-size: 8px;
+  line-height: 16px;
+  float: left;
+}
+.head-rt {
+  width: 6%;
+  height: 100%;
+  font-size: 8px;
+  line-height: 16px;
+  float: right;
+}
+#header {
+  widows: 100%;
+  height: 5%;
+}
+.header-con {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header-con img {
+  float: left;
+}
+.header-rt {
+  float: right;
+  width: 38%;
+  height: 100%;
+  background: pink;
+}
+.header-rt img {
+  display: block;
+  margin-right: 4.7%;
+}
+.header-rt h3 {
+  font-size: 10px;
+}
+.header-rt li {
+  list-style: none;
+  font-size: 12px;
+  color: red;
+}

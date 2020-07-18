@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    /*
+	width: 1000px;
+	*/
+    
+    margin: 0 auto;
+    font-size: small;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+li {
+    display: inline-block;
+}
+#header #top {
+    width: 100%;
+}
+.left {
+    float: left;
+    width: 62%;
+}
+.right {
+    float: left;
+    width: 35%;
+}
+#header p {
+    -webkit-writing-mode: vertical-rl;
+    position: fixed;
+    top: 150px;
+    left: 5%;
+    border: 1px dashed #999;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 27px;
+    color: red;
+    background-color: #c6ebf4;
+}
+#header #fenxiang {
+    position: fixed;
+    right: 0;
+}
+#main {
+    width: 80%;
+    margin: 20px auto 100px auto;
+    line-height: 200%;
+}
+#main ul {
+    background-color: #287ea9;
+    padding: 5px 0;
+}
+#main ul li a {
+    padding: 0 10px;
+    color: #fff;
+}
+#main h2 {
+    width: 62%;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #999;
+}
+#main h2 img {
+    vertical-align: bottom;
+}
+#main h2 span {
+    color: #287ea9;
+}
+#news {
+    padding: 10px 0;
+    border-right: 1px dotted #999;
+}
+#news dt img {
+    width: 30%;
+    float: left;
+    padding: 10px 10px;
+}
+#news dd {
+    margin-left: 40%;
+    width: 57%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#news dd,
+#tongzhi dd {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+#news dd a,
+#tongzhi dd a {
+    color: #287ea9;
+}
+.tu {
+    text-align: center;
+}
+#fenjie {
+    width: 95%;
+    border: 1px solid #888;
+    margin: 10px 0;
+}
+#main #zuoxia {
+    border-right: 1px dotted #999;
+}
+#main #zuoxia h2 {
+    width: 99.5%;
+}
+#zhaosheng {
+    width: 98%;
+    border: 1px dotted #999;
+    margin: 20px 1%;
+}
+#zhaosheng dt {
+    background-color: #287ea9;
+}
+#zhaosheng dt ol li a {
+    color: #fff;
+    padding: 6.5px 20px;
+}
+#zhaosheng dt ol li a:hover,
+#zhaosheng dt .dw {
+    background-color: #4b7fcd;
+    color: #fff32b
+}
+#zhaosheng dd {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#zhaosheng dd a {
+    color: red;
+    padding-left: 15px;
+}
+#zhaosheng dd a:hover,
+#zhaosheng dd .dw {
+    color: #287ea9;
+}
+#zhaosheng dd .jiacu {
+    font-weight: bolder;
+}
+#tongzhi {
+    margin: 15px 1% 0 1%;
+}
+#tongzhi dt {
+    color: #fff;
+    background: url(/uploads/user_upload/36431/anniu.png) no-repeat left center;
+    padding-left: 48px;
+    margin-bottom: 22px;
+}
+#tongzhi dd {
+    width: 90%;
+    margin-left: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#tongzhi dd a:hover,
+#tongzhi dd .dw {
+    color: red;
+}
+#main dd a span {
+    color: #333;
+    font-weight: lighter;
+}
+.rightimg {
+    text-align: center;
+}
+.rightimg img {
+    width: 90%;
+    margin: 10px 10px 0 10px;
+}
+#footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 170%;
+}
+#footer span {
+    color: #287ea9;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="/uploads/user_upload/36431/bg-header.png" id="top">
+        <img src="/uploads/user_upload/36431/r.gif" id="fenxiang">
+        <p>考试平台点此处进入
+            <br/>中山市公需科目培训</p>
+    </div>
+    
+    <div id="main">
+    
+        <ul>
+            <li><a href="">首页</a>
+            </li>
+            <li><a href="">学院介绍</a>
+            </li>
+            <li><a href="">新闻公告</a>
+            </li>
+            <li><a href="">学历教育</a>
+            </li>
+            <li><a href="">培训考证</a>
+            </li>
+            <li><a href="">国际合作</a>
+            </li>
+            <li><a href="">学生工作</a>
+            </li>
+            <li><a href="">本科班博客</a>
+            </li>
+            <li><a href="">党务工作</a>
+            </li>
+            <li><a href="">联系我们</a>
+            </li>
+        </ul>
+        <div>
+            <div class="left">
+                <h2><img src="/uploads/user_upload/36431/img_9.gif"> 新闻热点 <span>more >></span></h2>
+                <dl id="news">
+                    <dt><img src="/uploads/user_upload/36431/1.png"></dt>
+                    <dd><a href="#"><span>07-02</span> 我校成功举办第二届“香港职业教育体…</a>
+                    </dd>
+                    <dd><a href="#"><span>06-23</span> 中澳项目合作会议在我校召开</a>
+                    </dd>
+                    <dd><a href="#"><span>06-23</span> 美国夏威夷大学卡比奥拉尼学院代表再…</a>
+                    </dd>
+                    <dd><a href="#"><span>06-22</span> 香港职业训练局一行来我校交流访问</a>
+                    </dd>
+                    <dd><a href="#"><span>06-20</span> 2017年上半年全国大学英语四六级考试…</a>
+                    </dd>
+                    <dd><a href="#"><span>06-07</span> 哈尔滨工业大学现代远程教育2017年退…</a>
+                    </dd>
+                    <dd><a href="#"><span>05-23</span> 中山考区全国中小学教师资格面试考试…</a>
+                    </dd>
+                </dl>
+                <div class="tu"><img src="/uploads/user_upload/36431/2.png" id="fenjie">
+                </div>
+                <div id="zuoxia">
+                    <h2><img src="/uploads/user_upload/36431/img_9.gif"> 招生专栏 <span>more >></span></h2>
+                    <dl id="zhaosheng">
+                        <dt>
+                                <ol>
+                                    <li><a href="" class="dw">学历教育</a></li>
+                                    <li><a href="">培训考证</a></li>
+                                    <li><a href="">国际交流</a></li>
+                                </ol>
+                            </dt>
+                        <dd><a href="#" class="jiacu"><span>07-28</span> <img src="/uploads/user_upload/36431/ontop4.gif">2017年圆梦计划?中山职业技术学院招生简章</a>
+                        </dd>
+                        <dd><a href="#" class="jiacu"><span>07-28</span> <img src="/uploads/user_upload/36431/ontop4.gif">2017年圆梦计划?北京大学招生简章</a>
+                        </dd>
+                        <dd><a href="#" class="dw"><span>05-18</span> <img src="/uploads/user_upload/36431/ontop4.gif">2017年中山职业技术学院成人高等学历教育招生简章</a>
+                        </dd>
+                        <dd><a href="#" class="jiacu"><span>08-23</span> <img src="/uploads/user_upload/36431/ontop4.gif">北大、哈工大学专科、本科招生</a>
+                        </dd>
+                        <dd><a href="#" class="jiacu"><span>07-19</span> <img src="/uploads/user_upload/36431/ontop4.gif">2016年中职院圆梦计划招生简章</a>
+                        </dd>
+                        <dd><a href="#"><span>05-25</span> <img src="/uploads/user_upload/36431/ontop4.gif">2016年中山职业技术学院成人高等学历教育招生简章</a>
+                        </dd>
+                        <dd><a href="#"><span>05-12</span> <img src="/uploads/user_upload/36431/ontop4.gif">关于中山职业技术学院成教招生专业调整及更名的通知</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="right">
+                <dl id="tongzhi">
+                    <dt>通知公告 &nbsp;&nbsp; more >></dt>
+                    <dd><a href="#" class="dw"><span>09-01</span> 2017年我校成人大专招生专业代码</a>
+                    </dd>
+                    <dd><a href="#"><span>07-04</span> 关于公布2017年上半年中山市普…</a>
+                    </dd>
+                    <dd><a href="#"><span>06-26</span> 中山市教育和体育局关于2017年…</a>
+                    </dd>
+                    <dd><a href="#"><span>06-22</span> 美国北亚利桑那大学来我校交流…</a>
+                    </dd>
+                    <dd><a href="#"><span>06-02</span> 中山职院成人教育2017届优秀毕…</a>
+                    </dd>
+                    <dd><a href="#"><span>05-10</span> Corel国际认证考试培训班招生简章</a>
+                    </dd>
+                    <dd><a href="#"><span>03-30</span> 关于英语ab级、计算机水平和英…</a>
+                    </dd>
+                </dl>
+                <div class="rightimg">
+                    <img src="/uploads/user_upload/36431/002.jpg">
+                    <br>
+                    <img src="/uploads/user_upload/36431/001.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <p>
+            <span>学院首页 广东教育考试院 广东教育厅 广东人事考试局 广东招考网</span>
+            </br>
+            版权所有：中山职业技术学院　　邮编：528404
+            <br/> 联系地址：广东省中山市博爱7路25号 西区合作中心一楼继续教育处：成教科88365370/88368005、培训科89986705/88365371
+        </p>
+    </div>
+</body>
+</html>

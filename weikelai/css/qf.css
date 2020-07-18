@@ -1,0 +1,19 @@
+#head {
+  width: 100%;
+  height: 62px;
+  background: black;
+}
+.head-con {
+  width: 1004px;
+  height: 62px;
+  background: pink;
+  margin: 0 auto;
+}
+.head-con h1 {
+  float: left;
+}
+.head-con ul {
+  float: right;
+}
+.head-con ul li {
+}

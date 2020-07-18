@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   .box{
+       width:300px;
+       padding: 0 20px  ;
+       margin:100px auto;
+       border:1px solid  red;
+   }
+   .box p {
+			height: 50px;
+			line-height: 50px;
+			position: relative;
+		}
+		
+   .box p .tip{
+       position: abosolute;
+       left: 40px;
+            top: 43px;
+            border:1px solid black;
+            display: none;
+   }
+    </style>
+</head>
+<body>
+ <div class="box">
+<form action="">
+    <p>
+        <input type="text" placeholder="占位符">
+
+    </p>
+    <p>
+        <input type="password">
+    </p>
+    <p id="box">
+        <label><input type="checkbox" name="fuxuan" checked>点击选择</label>
+        <span class="tip" id="tip">提示文本问狂</span>
+    </p>
+</div>
+
+
+</form>
+<script>
+    var oBox = document.getElementById("box");
+    var oTip = document.getElementById("tip");
+    oBox.onmousedown = function() {
+        oTip.style.display = "block";
+    }
+    oBox.onmouseleave = function() {
+        oTip.style.display = "none";
+    };
+
+
+</script>
+</body>
+</html>

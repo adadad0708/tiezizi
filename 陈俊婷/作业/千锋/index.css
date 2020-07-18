@@ -1,0 +1,385 @@
+@charset "utf-8";
+/* head */
+.head_logo{
+    width:1001px;
+    height:63px;
+    margin: 0 auto;
+    background:#232323;
+}
+.head_logo .logo{
+    margin:12px 0 0 11px;
+}
+.head_logo .nav{
+    width:746px;
+    height: 63px;
+    float:right;
+}
+.head_logo .nav li {
+    float:left;
+    background: url(../images/gang.jpg) no-repeat right center;
+}
+.head_logo .nav li a{
+    font-size: 14px;
+    line-height: 63px;
+    color: #ffffff;
+    padding: 22px 15px;
+}
+.head_logo .nav li a:hover{
+    background: orange;
+    color: black;
+
+}
+.head_logo .nav ul .li1{
+    background:none;
+}
+
+/* banner图 */
+.banner{
+    margin: 0 auto;
+    width:1001px;
+    height:420px;
+    background: url(../images/banner.jpg) no-repeat center;
+}
+/* main */
+.main{
+    height:349px;
+    width: 1001px;
+    background:#f5f5f5;
+    margin: 0 auto; 
+}
+.main .main-l{
+    width: 261px;
+    height: 349px;
+    background: url(../images/gang2.jpg) no-repeat right center;
+    /* overflow: hidden; */
+}
+.main .main-l img{
+   margin-left: 100px;
+   margin-top:56px; 
+}
+.main .main-l h2{
+    font-size:20px;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    color: #262d35;
+}
+.main .main-l h3{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding-bottom:20px;
+    color: 5a6a81;  
+    text-align: center;
+}
+.main .main-l p{
+    font-size:10px;
+    line-height: 18px;
+    color: #95bbd2;
+    text-align: center;
+}
+
+.main .main-2{
+    width: 261px;
+    height: 349px;
+    background: url(../images/gang2.jpg) no-repeat right center;
+    /* overflow: hidden; */
+}
+.main .main-2 img{
+   margin-left: 100px;
+   margin-top:56px; 
+}
+.main .main-2 h2{
+    font-size:20px;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    color: #262d35;
+}
+.main .main-2 h3{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding-bottom:20px;
+    color: 5a6a81;  
+    text-align: center;
+}
+.main .main-2 p{
+    font-size:10px;
+    line-height: 18px;
+    color: #95bbd2;
+    text-align: center;
+}
+.main .main-3{
+    width: 252px;
+    height: 349px;
+    background: url(../images/gang2.jpg) no-repeat right center;
+    /* overflow: hidden; */
+}
+.main .main-3 img{
+   margin-left: 61px;
+   margin-top:56px; 
+}
+.main .main-3 h2{
+    font-size:20px;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    color: #262d35;
+}
+.main .main-3 h3{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding-bottom:20px;
+    color: 5a6a81;  
+    text-align: center;
+}
+.main .main-3 p{
+    font-size:10px;
+    line-height: 18px;
+    color: #95bbd2;
+    text-align: center;
+}
+
+.main .main-4{
+    width: 227px;
+    height: 349px;
+    /* overflow: hidden; */
+}
+.main .main-4 img{
+   margin-left: 69px;
+   margin-top:56px; 
+}
+.main .main-4 h2{
+    font-size:20px;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    color: #262d35;
+}
+.main .main-4 h3{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding-bottom:20px;
+    color: 5a6a81;  
+    text-align: center;
+}
+.main .main-4 p{
+    font-size:10px;
+    line-height: 18px;
+    color: #95bbd2;
+    text-align: center;
+}
+/* 新闻 */
+.news{
+    width:1001px;
+    height:224px;
+
+    margin: 0 auto;
+    padding-top:40px;
+    margin-bottom:43px
+}
+.news .news-l{
+    width:297px;
+    height:224px;
+   
+    margin-right: 14px;
+}
+.news .news-z{
+    width:325px;
+    height:224px;
+  
+    background: url(../images/gang3.jpg) no-repeat right center;
+}
+.news .news-z h2{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 17px;
+}
+.news .news-z .p1{
+    width: 312px;
+    height: 73px;
+   
+    border-bottom: 1px dashed red;
+   
+}
+.news .news-z .p1 h3{
+    margin-bottom: 10px; font-size: 16px;
+}
+.news .news-z .p1 p{
+     font-size: 12px;
+    line-height: 16px;
+    text-indent: 2em;
+}
+.news .news-z ul{
+    margin-top:7px;
+}
+.news .news-z ul li{
+    font-size:12px; 
+    line-height:25px;
+    background: url(../images/fu.jpg) no-repeat left center;
+    padding-left:13px;     
+}
+
+.news .news-z ul li{
+    color:#42453e;
+}
+.news .news-r{
+    width:317px;
+    height:224px;
+   
+    margin-right:16px;
+}
+.news .news-r h2{
+    margin-bottom: 21px;
+    font-size:18px; 
+}
+.news .news-r img{
+    float:left;
+    margin-right:11px;
+}
+.news .news-r h3{
+    
+    font-size:22px;
+    line-height: 63px; 
+}
+.news .news-r li{
+    font-size: 12px;
+    line-height: 23px;
+    color:#656968 ;
+}
+/****************map****************** */
+.map{
+    width:1001px;
+    height:214px;
+    margin: 0 auto;
+    background:#222222;
+   
+}
+
+.map .map-l{
+    width: 493px;
+    height: 167px;
+    padding-top: 47px;
+    
+} 
+.map .map-l .ul1{
+    margin-right:41px;
+    margin-left:11px;
+}
+.map .map-l .ul1 p{
+    font-size:12px;
+    color: #fff;
+}
+.map .map-l .ul1 ul{
+    margin-top:18px;
+}
+.map .map-l .ul1 li{
+font-size: 12px;
+color:#888 ;
+line-height: 24px;
+}
+
+.map .map-l .ul2{
+    margin-right:41px;
+}
+.map .map-l .ul2 p{
+    font-size:12px;
+    color: #fff;
+}
+.map .map-l .ul2 ul{
+    margin-top:18px;
+}
+.map .map-l .ul2 li{
+font-size: 12px;
+color:#888 ;
+line-height: 24px;
+}
+
+
+.map .map-l .ul3{
+    margin-right:41px;
+}
+.map .map-l .ul3 p{
+    font-size:12px;
+    color: #fff;
+}
+.map .map-l .ul3 ul{
+    margin-top:18px;
+}
+.map .map-l .ul3 li{
+font-size: 12px;
+color:#888 ;
+line-height: 24px;
+}
+
+
+.map .map-l .ul4{
+    margin-right:41px;
+}
+.map .map-l .ul4 p{
+    font-size:12px;
+    color: #fff;
+}
+.map .map-l .ul4 ul{
+    margin-top:18px;
+}
+.map .map-l .ul4 li{
+font-size: 12px;
+color:#888 ;
+line-height: 24px;
+}
+
+
+.map .map-l .ul5{
+    margin-right:41px;
+}
+.map .map-l .ul5 p{
+    font-size:12px;
+    color: #fff;
+}
+.map .map-l .ul5 ul{
+    margin-top:18px;
+}
+.map .map-l .ul5 li{
+font-size: 12px;
+color:#888 ;
+line-height: 24px;
+}
+
+
+.map  .map-r{
+    width:191px;
+    height: 175px;
+    padding-top:19px;
+    background: url(../images/gang4.jpg) no-repeat left center;
+}
+.map  .map-r img{
+    margin: 0 12px 0 32px; 
+}
+
+.map  .map-z{
+    width:317px;
+    height: 193px;
+    padding-top:19px;
+    background: url(../images/gang4.jpg) no-repeat left center;
+}
+.map  .map-z img{
+    margin: 0 58px 0 38px; 
+}
+
+
+
+/* foot */
+.foot{
+    width:1001px;
+    height:44px;
+    margin: 0 auto;
+    background: #101010;
+    font-size:14px;
+    text-align: center;
+    line-height:44px;
+    color:#9b9b9b;
+}
